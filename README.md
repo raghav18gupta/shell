@@ -39,4 +39,15 @@
 
 	![softlink](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/softlink2.png)
 
-- Hard links are just diffrenet names for the same file.
+- Hard links are just diffrenet names pointing the same file.
+	- `ln file1 hardfile`
+		- `file1` has now `2` numbers of hardlinks.
+		- if `file1` is deleted or renamed, `hardfile`
+		![softlink](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/hardlink.png)
+	- So there are two "names" `file1` and `hardfile` pointing to same content. Hence they have same iNode value.
+	- If we delete `file1`, only name is deleted, not actual file having content. Actual file will delete if we further delete `hardfile`.
+	![softlink](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/hardlink2.png)
+	- Also note that: A directory has atleast `2` numbers of hardlinks beacause it has two name: `.` and it's name.
+	- Some OS prevent user to make hardlink of a directory.
+
+
