@@ -12,4 +12,5 @@
 
 ## Links: Hard and soft
 
-- 
+- Various field in `ls -l`
+	![ls -l](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/ls_l.png)
