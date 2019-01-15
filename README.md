@@ -15,7 +15,7 @@
 - Various field in `ls -li`
 	![ls -l](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/ls-li.png)
 
-	- `2628857 ` : inode number
+	- `2628857 ` : iNode number
 	- `-rwxrwxr-x ` : permissions
 	- `1 ` : number of hard links
 	- `raghav18gupta ` : owner
@@ -25,4 +25,12 @@
 	- `git-push.sh` : name
 
 - Soft links are just shortucts.
+	- `ln -s file1 softfile`
+
+	![ls -l](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/ls-li.png)
+	
+	- Note: 
+		- `softfile` is another 'actual' file as it has different iNode number than `file1`.
+		- `file1` still has `1` hard link.
+	
 - Hard links are just diffrenet names for the same file.
