@@ -27,7 +27,7 @@
 - Soft links are just shortucts.
 	- `ln -s file1 softfile`
 
-	![ls -l](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/ls-li.png)
+	![ls -l](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/softlink.png)
 	
 	- Note: 
 		- `softfile` is another 'actual' file as it has different iNode number than `file1`.
