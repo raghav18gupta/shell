@@ -27,10 +27,16 @@
 - Soft links are just shortucts.
 	- `ln -s file1 softfile`
 
-	![ls -l](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/softlink.png)
+	![softlink](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/softlink1.png)
 	
 	- Note: 
 		- `softfile` is another 'actual' file as it has different iNode number than `file1`.
 		- `file1` still has `1` hard link.
+		- `l` in `softfile` permission.
+	- Hence `file1` contains actual data, while `softfile` is just shortcut of it.
 	
+	- Rename `file1` to `file2`:
+
+	![softlink](https://raw.githubusercontent.com/raghav18gupta/shell/master/messed-dir/static_files/softlink2.png)
+
 - Hard links are just diffrenet names for the same file.
