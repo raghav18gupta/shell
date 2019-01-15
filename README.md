@@ -17,11 +17,11 @@
 
 	- `2628857 ` : inode number
 	- `-rwxrwxr-x ` : permissions
-	- `1 ` : number of links pointing to this file
-	- `raghav18gupta ` : user
+	- `1 ` : number of hard links
+	- `raghav18gupta ` : owner
 	- `raghav18gupta ` : group
 	- `61 ` : size (Bytes)
-	- `Jan 15 13:25 ` : date creted
+	- `Jan 15 13:25 ` : date modified
 	- `git-push.sh` : name
 
 - Soft links are just shortucts.
